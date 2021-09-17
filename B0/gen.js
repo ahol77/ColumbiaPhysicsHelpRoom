@@ -10,7 +10,7 @@ function init() {
 	let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 	let dayCode = ["m", "t", "w", "r", "f"]
 
-	if((day >= 0 && day <4 && hour >= 1 && hour <= 8) || (day == 4 && hour >= 1 && hour <= 3)) {
+	if((day >= 0 && day <4 && hour >= 1 && hour <= 8) || (day == 4 && hour >= 1 && hour <= 8)) {
 		time.innerText = "Current Time Slot: " + days[day] + " " + hour + ":00-" + (hour+1) + ":00 PM"
 		slot = document.getElementById(dayCode[day] + hour)
 		if(slot.childNodes.length == 0) {
